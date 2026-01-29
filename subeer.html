@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Web Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+  <input type="text" id="display" disabled>
+  
+  <!-- Top functions -->
+  <div class="buttons-row">
+    <button class="func" onclick="addFunc('sin(')">sin</button>
+    <button class="func" onclick="addFunc('cos(')">cos</button>
+    <button class="func" onclick="addFunc('tan(')">tan</button>
+    <button class="func" onclick="addFunc('log(')">log</button>
+  </div>
+
+  <!-- Number + operator rows -->
+  <div class="buttons-row">
+    <button class="number" onclick="addChar('1')">1</button>
+    <button class="number" onclick="addChar('2')">2</button>
+    <button class="number" onclick="addChar('3')">3</button>
+    <button class="operator" onclick="addChar('+')">+</button>
+  </div>
+  <div class="buttons-row">
+    <button class="number" onclick="addChar('4')">4</button>
+    <button class="number" onclick="addChar('5')">5</button>
+    <button class="number" onclick="addChar('6')">6</button>
+    <button class="operator" onclick="addChar('-')">-</button>
+  </div>
+  <div class="buttons-row">
+    <button class="number" onclick="addChar('7')">7</button>
+    <button class="number" onclick="addChar('8')">8</button>
+    <button class="number" onclick="addChar('9')">9</button>
+    <button class="operator" onclick="addChar('*')">*</button>
+  </div>
+  <div class="buttons-row">
+    <button class="number" onclick="addChar('0')">0</button>
+    <button class="operator" onclick="addChar('%')">%</button>
+    <button class="operator" onclick="calculate()">=</button>
+    <button class="operator" onclick="addChar('/')">/</button>
+  </div>
+  <div class="buttons-row">
+    <button class="operator" onclick="clearDisplay()">C</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
